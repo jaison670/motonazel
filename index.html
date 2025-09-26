@@ -1,157 +1,166 @@
-
-html
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Moto Nazel - Mecánica de Motos</title>
 <link href="style.css" rel="stylesheet"/>
-<style>body {
-  font-family: "Scheherazade Latin", serif;
-}</style></head>
+<style>
+  body { font-family: "Scheherazade Latin", serif; }
+</style>
+</head>
 <body>
+
 <header>
-<div class="logo">
-<div class="brand-name">Moto Nazel</div>
-<img alt="Mecánicos al Instante" src="logo.png"/>
-</div>
-<div class="menu-toggle" id="menuToggle">☰</div>
-<nav id="navMenu">
-<ul>
-<li><a data-section="reparacion" href="#">Reparación</a></li>
-<li><a data-section="mantencion" href="#">Mantención</a></li>
-<li><a data-section="grua24-7" href="#">Grúa 24/7</a></li>
-<li><a data-section="vulcanizacion" href="#">Vulcanización</a></li>
-<li><a data-section="asesoramiento" href="#">Asesoramiento</a></li>
-<li><a data-section="curso-moto" href="#">Curso de Moto</a></li>
-<li><a data-section="retiro-de-moto" href="#">Retiro de Moto</a></li>
-<li><a data-section="electricidad" href="#">Electricidad</a></li>
-</ul>
-</nav>
+  <div class="logo">
+    <div class="brand-name">Moto Nazel</div>
+    <img alt="Mecánicos al Instante" src="imagenes/logo.png"/>
+  </div>
+  <div class="menu-toggle" id="menuToggle">☰</div>
+  <nav id="navMenu">
+    <ul>
+      <li><a data-section="reparacion" href="#">Reparación</a></li>
+      <li><a data-section="mantencion" href="#">Mantención</a></li>
+      <li><a data-section="grua24-7" href="#">Grúa 24/7</a></li>
+      <li><a data-section="vulcanizacion" href="#">Vulcanización</a></li>
+      <li><a data-section="asesoramiento" href="#">Asesoramiento</a></li>
+      <li><a data-section="curso-moto" href="#">Curso de Moto</a></li>
+      <li><a data-section="retiro-de-moto" href="#">Retiro de Moto</a></li>
+      <li><a data-section="electricidad" href="#">Electricidad</a></li>
+    </ul>
+  </nav>
 </header>
+
 <div id="main-content">
-<div class="hero">
-<img alt="Mecánicos al Instante" class="hero-logo" src="logo.png"/>
-<p class="hero-description">Mecánicos al instante hasta la puerta de tu casa. Agenda tu hora con anticipación. Tenemos todos los servicios para tu moto. Vemos motos 2T, 4T, cuatrimotos, motoscooters, pitbiker, bicimotos en todo el sector poniente (Talagante, Peñaflor, Isla de Maipo, Islita, Melipilla, Maipú, Padre Hurtado, Chañihue, Naltahua, Cerrillos).</p>
+  <div class="hero">
+    <img alt="Mecánicos al Instante" class="hero-logo" src="imagenes/logo.png"/>
+    <p class="hero-description">
+      Mecánicos al instante hasta la puerta de tu casa. Agenda tu hora con anticipación. Tenemos todos los servicios para tu moto.
+      Vemos motos 2T, 4T, cuatrimotos, motoscooters, pitbiker, bicimotos en todo el sector poniente.
+    </p>
+  </div>
 </div>
-</div><section class="app-section" id="reparacion">
-<h2>Reparación</h2>
-<p>Hola amigo motoquero! En esta sección podrás agendar tu visita en el apartado<strong>"Agenda tu Hora"</strong>.
-    Recuerda escribir al WhatsApp indicando la fecha tomada, nombre y dirección. La visita tiene un costo de<strong>$10.000</strong>que debe ser cancelado al momento de que el mecánico llegue a su domicilio.</p>
-<div class="section-buttons">
-<a class="btn-agenda" href="https://calendar.app.google/YF8AegyMPYdb6qPr8" target="_blank">📅 Agenda tu Hora</a>
-<a href="https://wa.me/56956864591" target="_blank"><img alt="WhatsApp" src="whatsapp-icon.jpg" style="height:33px; vertical-align:middle;"/></a>
-</div>
-<button class="btn-back" onclick="goBack()">Volver al inicio</button>
+
+<!-- SECCIÓN REPARACIÓN -->
+<section class="app-section" id="reparacion">
+  <h2>Reparación</h2>
+  <p>Hola amigo motoquero! En esta sección podrás agendar tu visita en el apartado <strong>"Agenda tu Hora"</strong>.
+  La visita tiene un costo de <strong>$10.000</strong>.</p>
+  <div class="section-buttons">
+    <a class="btn-agenda" href="https://calendar.app.google/YF8AegyMPYdb6qPr8" target="_blank">📅 Agenda tu Hora</a>
+    <a href="https://wa.me/56956864591" target="_blank">
+      <img alt="WhatsApp" src="imagenes/whatsapp-icon.jpg" style="height:33px; vertical-align:middle;"/>
+    </a>
+  </div>
+  <button class="btn-back" onclick="goBack()">Volver al inicio</button>
 </section>
+
+<!-- SECCIÓN MANTENCIÓN -->
 <section class="app-section" id="mantencion">
-<h2>Mantención</h2>
-<p>
-<strong>Intervalos de Mantenimiento</strong><br/><br/>
-<strong>Piolas (embrague y acelerador):</strong>lubricar/ajustar cada 3 000 km (o dos veces al año); en polvo/lluvia/extremo, cada 1 000 km. Renovar cada 1 año (15 000–20 000 km).<br/><br/>
-<strong>Pastillas de freno (disco):</strong>sustituir entre 8 000 km y 10 000 km.<br/><br/>
-<strong>Balatas (freno tambor trasero):</strong>reemplazar cada 15 000 km.<br/><br/>
-<strong>Cambio de aceite motor:</strong><br/>Mineral: cada 3 000–4 000 km<br/>Semisintético: cada 5 000–7 000 km<br/>Sintético: hasta 10 000 km<br/><br/>
-<strong>Cadena:</strong>lubricar cada 500 km y tras lluvia; reemplazo completo cada 25 000–40 000 km.<br/><br/>
-<strong>Carburador:</strong>limpieza/ajuste cada 6 meses o 10 000 km.<br/><br/>
-<strong>Filtro de aire:</strong>reemplazar cada 15 000 km (o limpiar cada 5 000–10 000 km si es reutilizable).<br/><br/>
-<strong>Líquido de freno:</strong>cambiar cada 1–2 años.<br/><br/>
-<strong>Tarifas:</strong><br/>
-<strong>Mantenimiento completo de motos hasta 250cc: $69.000</strong><br/>incluye aceite filtro y bujía<br/>incluye: (Revisión y cambio de aceite motor y filtro, Limpieza de carburador + regulación de válvulas, lubricación a piolas, cambio de bujía y limpieza filtro de aire, ajuste y limpieza de kit de transmisión, revisión de sistema de carga, mantención de freno delantero y trasero, cambio líquido de freno, revisión de neumáticos)<br/>para mantenimiento completo de una moto de mayor cc comunícate al wsp<br/><br/>
-<strong>Revisión y cambio de aceite motor y filtro (no incluye aceite ni filtro):</strong>$15.000<br/><br/>
-<strong>Cambio de pastillas + mantención de caliper + cambio de líquido (disco o ABS):</strong>$25.000<br/><br/>
-<strong>Cambio de balatas para tambor:</strong>$20.000<br/><br/>
-<strong>Transmisión</strong><br/>Reemplazo de cadena (mano de obra, sin repuesto): $20.000<br/>Cambio de kit de arrastre (cadena, piñón, corona y dámper; sin repuestos): $30.000<br/><br/>
-<strong>Carburador y válvulas</strong><br/>Limpieza + ajuste/reemplazo de carburador: $30.000<br/>Limpieza de carburador + regulación de válvulas: $45.000<br/>Limpieza de carburador inyectado + ajuste con scanner: $60.000<br/><br/>
-<strong>Cambios de piolas (embrague y acelerador):</strong>$25.000<br/><br/>
-<strong>Apriete de pernos de motor y partes fundamentales:</strong>$25.000<br/><br/>
-<a href="https://wa.me/56956864591" target="_blank"><img alt="WhatsApp" src="whatsapp-icon.jpg" style="height:33px; vertical-align:middle;"/></a>
-</p>
-<button class="btn-back" onclick="goBack()">Volver al inicio</button>
+  <h2>Mantención</h2>
+  <p>
+    <strong>Intervalos de Mantenimiento</strong><br/>
+    <strong>Piolas (embrague y acelerador):</strong>lubricar/ajustar cada 3 000 km...<br/>
+    <strong>Pastillas de freno:</strong> sustituir entre 8 000 km y 10 000 km.<br/>
+    <strong>Cadena:</strong>lubricar cada 500 km y tras lluvia.<br/>
+    <strong>Cambio de aceite motor:</strong> Mineral, Semisintético, Sintético según km.<br/>
+    <strong>Tarifas:</strong> Completo hasta 250cc: $69.000, mayores consultar vía WhatsApp.<br/>
+  </p>
+  <div class="section-buttons">
+    <a href="https://wa.me/56956864591" target="_blank">
+      <img alt="WhatsApp" src="imagenes/whatsapp-icon.jpg" style="height:33px; vertical-align:middle;"/>
+    </a>
+  </div>
+  <button class="btn-back" onclick="goBack()">Volver al inicio</button>
 </section>
+
+<!-- SECCIÓN GRÚA 24/7 -->
 <section class="app-section" id="grua24-7">
-<h2>Grúa 24/7</h2>
-<div class="tabla-info">
-<p>Esta sección es exclusiva para emergencias en ruta o retiro de emergencia para su reparación.. El valor varía según el trayecto.</p>
-<a href="https://wa.me/56956864591" target="_blank"><img alt="WhatsApp" src="whatsapp-icon.jpg" style="height:33px; vertical-align:middle;"/></a>
-</div>
-<div class="volver-inicio"><a href="#">⬅ Volver a Inicio</a></div></section>
+  <h2>Grúa 24/7</h2>
+  <p>Emergencias en ruta o retiro de moto para reparación. El valor varía según el trayecto.</p>
+  <a href="https://wa.me/56956864591" target="_blank">
+    <img alt="WhatsApp" src="imagenes/whatsapp-icon.jpg" style="height:33px; vertical-align:middle;"/>
+  </a>
+  <div class="volver-inicio"><a href="#">⬅ Volver a Inicio</a></div>
+</section>
+
+<!-- SECCIÓN VULCANIZACIÓN -->
 <section class="app-section" id="vulcanizacion">
-<h2>Vulcanización</h2>
-<p>Hola amigo motoquero, esta sección es exclusiva para que agendes tu hora de vulcanización móvil a la puerta de tu casa
-    con un valor de<strong>$25.000</strong>por rueda pinchada.</p>
-<div class="section-buttons">
-<a href="https://wa.me/56956864591" target="_blank"><img alt="WhatsApp" src="whatsapp-icon.jpg" style="height:33px; vertical-align:middle;"/></a>
-</div>
-<button class="btn-back" onclick="goBack()">Volver al inicio</button>
+  <h2>Vulcanización</h2>
+  <p>Servicio de vulcanización móvil a domicilio por <strong>$25.000</strong> por rueda.</p>
+  <div class="section-buttons">
+    <a href="https://wa.me/56956864591" target="_blank">
+      <img alt="WhatsApp" src="imagenes/whatsapp-icon.jpg" style="height:33px; vertical-align:middle;"/>
+    </a>
+  </div>
+  <button class="btn-back" onclick="goBack()">Volver al inicio</button>
 </section>
+
+<!-- SECCIÓN ASESORAMIENTO -->
 <section class="app-section" id="asesoramiento">
-<h2>Asesoramiento</h2>
-<p>¡Hola amigos motoqueros! En esta sección podrás recibir asesoramiento para comprar una moto (nueva o usada),
-    así como también para venderla. Este servicio se puede realizar de forma online o presencial.</p>
-<p>
-<strong>Valores:</strong><br/>
-<strong>Asesoría virtual:</strong>$20.000 (podrás resolver todas tus dudas en un máximo de 1 hora)<br/>
-<strong>Asesoría en terreno:</strong>$40.000 (un mecánico te acompañará para ayudarte a comprar o vender tu moto,
-    entregando información detallada del estado de la motocicleta antes de adquirirla)</p>
-<div class="section-buttons">
-<a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=56956864591&amp;text=Hola,%20quisiera%20asesoramiento%20para%20comprar%20o%20vender%20una%20moto" target="_blank">📲</a>
-</div>
-<button class="btn-back" onclick="goBack()">Volver al inicio</button>
+  <h2>Asesoramiento</h2>
+  <p>Asesoría para comprar o vender una moto. Online o presencial.</p>
+  <p>
+    <strong>Virtual:</strong> $20.000<br/>
+    <strong>En terreno:</strong> $40.000
+  </p>
+  <div class="section-buttons">
+    <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=56956864591&text=Hola,%20quiero%20asesoramiento" target="_blank">📲</a>
+  </div>
+  <button class="btn-back" onclick="goBack()">Volver al inicio</button>
 </section>
+
+<!-- SECCIÓN CURSO DE MOTO -->
 <section class="app-section" id="curso-moto">
-<h2>Curso de Moto</h2>
-<p>Se realizan clases de motos. Nuestro curso es ideal para principiantes, ya que se parte desde cero:
-    desde conocer las partes de la moto, su funcionamiento, hasta técnicas elementales de conducción y manejo seguro en la calle.</p>
-<p>Contamos con todos los elementos de seguridad y un recinto cerrado para que puedas aprender de la mejor forma.
-    Se entrega: elementos de seguridad y motocicleta 125cc.</p>
-<p>
-<strong>Sector:</strong>Talagante<br/>
-<strong>Valor:</strong><br/>$60.000 – 3 hrs intensivas de manejo práctico.<br/>$90.000 – 4 hrs de manejo + circuito de examen.</p>
-<div class="section-buttons">
-<a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=56956864591&amp;text=Hola,%20quiero%20información%20del%20curso%20de%20moto" target="_blank">
-<img alt="WhatsApp" src="logo.png" style="height: 24px; margin-right: 8px;"/><img alt="WhatsApp" src="whatsapp-icon.jpg" style="height:27px;"/></a>
-</div>
-<div class="curso-galeria">
-<img alt="Curso de moto" class="curso-img" src="a1.jpg"/><img alt="Curso de moto" class="curso-img" src="a2.jpg"/><img alt="Curso de moto" class="curso-img" src="a3.jpg"/>
-</div>
-<button class="btn-back" onclick="goBack()">Volver al inicio</button>
+  <h2>Curso de Moto</h2>
+  <p>Clases para principiantes, con moto 125cc y equipo de seguridad.</p>
+  <p><strong>Valor:</strong> $60.000 - 3 hrs, $90.000 - 4 hrs + examen</p>
+  <div class="curso-galeria">
+    <img alt="Curso de moto" class="curso-img" src="imagenes/a1.jpg"/>
+    <img alt="Curso de moto" class="curso-img" src="imagenes/a2.jpg"/>
+    <img alt="Curso de moto" class="curso-img" src="imagenes/a3.jpg"/>
+  </div>
+  <button class="btn-back" onclick="goBack()">Volver al inicio</button>
 </section>
+
+<!-- SECCIÓN RETIRO DE MOTO -->
 <section class="app-section" id="retiro-de-moto">
-<h2>Retiro de Moto</h2>
-<p>¡Hola amigos motoqueros! Aquí podrás programar el retiro de tu motocicleta para una reparación o mantención,
-    y será entregada de la misma forma hasta tu domicilio.</p>
-<p>Aquí abajo puedes escribir al WhatsApp para confirmar la hora con tu nombre, dirección, modelo de moto,
-    marca y problema. El valor por el retiro y entrega es de:<strong>$20.000</strong>.</p>
-<div class="section-buttons">
-<a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=56956864591&amp;text=hola%20moto%20nazel%20quiero%20agendar%20el%20retiro%20de%20mi%20moto%20ahora%20te%20dare%20nombre%20,%20direccion,%20modelo%20de%20moto%20,marca%20y%20problema" target="_blank">📲</a>
-</div>
-<button class="btn-back" onclick="goBack()">Volver al inicio</button>
+  <h2>Retiro de Moto</h2>
+  <p>Programar retiro y entrega de moto a domicilio. Valor: <strong>$20.000</strong></p>
+  <div class="section-buttons">
+    <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=56956864591&text=Quiero%20agendar%20retiro" target="_blank">📲</a>
+  </div>
+  <button class="btn-back" onclick="goBack()">Volver al inicio</button>
 </section>
+
+<!-- SECCIÓN ELECTRICIDAD -->
 <section class="app-section" id="electricidad">
-<h2>Electricidad</h2>
-<p>¡Hola amigos motoqueros! Aquí encontrarás soluciones para tus problemas eléctricos, como instalación de alarmas o luces adicionales.
-    Tenemos al eléctrico especializado para ti. La visita tiene un costo de<strong>$10.000</strong>.</p>
-<p>Registra tu solicitud y luego confírmala a través de WhatsApp con tu nombre, dirección, día y hora agendada,
-    modelo de moto, marca y problema.</p>
-<div class="section-buttons">
-<a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=56956864591&amp;text=hola%20moto%20nazel%20quisiera%20agendar%20mi%20vista%20ahora%20te%20dare%20mi%20nombre%20,%20direccion,%20dia%20y%20hora%20agendada%20%20modelo%20de%20moto%20,marca%20y%20problema" target="_blank">📲</a>
-</div>
-<button class="btn-back" onclick="goBack()">Volver al inicio</button>
+  <h2>Electricidad</h2>
+  <p>Problemas eléctricos: instalación de alarmas, luces, etc. Valor: <strong>$10.000</strong></p>
+  <div class="section-buttons">
+    <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=56956864591&text=Solicitud%20servicio%20eléctrico" target="_blank">📲</a>
+  </div>
+  <button class="btn-back" onclick="goBack()">Volver al inicio</button>
 </section>
+
 <footer>
-<div class="footer-logo"><img alt="Mecánicos al Instante" src="logo.png"/></div>
-<p>© 2025 Moto Nazel. Todos los derechos reservados.</p>
+  <div class="footer-logo"><img alt="Mecánicos al Instante" src="imagenes/logo.png"/></div>
+  <p>© 2025 Moto Nazel. Todos los derechos reservados.</p>
 </footer>
-<script src="script.js"></script>
-<div class="social-footer">
-<a href="https://web.facebook.com/joa.expres?locale=es_LA" target="_blank">
-<img alt="Facebook" class="social-icon" src="facebook.png" style=" height:33px;"/>
-</a>
-<a href="https://www.instagram.com/motonazel/" target="_blank">
-<img alt="Instagram" class="social-icon" src="instagram.webp" style=" height:33px;"/>
-</a>
+
+<!-- Redes sociales fijas -->
+<div class="social-icons">
+  <a href="https://web.facebook.com/joa.expres/?locale=es_LA" target="_blank">
+    <img alt="Facebook" src="imagenes/facebook.png"/>
+  </a>
+  <a href="https://www.instagram.com/motonazel/" target="_blank">
+    <img alt="Instagram" src="imagenes/instagram.webp"/>
+  </a>
+  <a href="https://wa.me/56956864591" target="_blank">
+    <img alt="WhatsApp" src="imagenes/whatsapp-icon.jpg"/>
+  </a>
 </div>
-<div class="social-icons" style="position: fixed; bottom: 10px; left: 10px; display: flex; gap: 10px;"><a href="https://web.facebook.com/joa.expres/?locale=es_LA" target="_blank"><img alt="Facebook" src="facebook.png" style="height:36px;"/></a><a href="https://www.instagram.com/motonazel/" target="_blank"><img alt="Instagram" src="instagram.webp" style="height:36px;"/></a><a href="https://wa.me/56956864591" target="_blank"><img alt="WhatsApp" src="whatsapp-icon.jpg" style="height:36px;"/></a></div>
+
+<script src="script.js"></script>
 </body>
 </html>
