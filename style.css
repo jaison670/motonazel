@@ -1,0 +1,221 @@
+
+/* style.css */
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+
+/* BASE */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #121212;
+  color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* LOGO */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+.logo img, .hero-logo, .footer-logo img {
+  height: 70px;
+  max-height: 14vw;
+  min-height: 48px;
+}
+.logo .brand-name {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #FFD700;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+}
+.hero-logo { margin-bottom: 1.2rem; }
+.hero-description {
+  font-size: 1.1rem;
+  color: #CCCCCC;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* Sección Reparación */
+section#reparacion, section#mantencion, section#grua24-7, section#vulcanizacion, section#asesoramiento, section#compra-venta, section#retiro-de-moto, section#electricidad {
+  padding: 2rem 1.2rem;
+  border-top: 1px solid #2a2a2a;
+}
+section#reparacion h2, section#mantencion h2, section#grua24-7 h2, section#vulcanizacion h2, section#asesoramiento h2, section#compra-venta h2, section#retiro-de-moto h2, section#electricidad h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+section#reparacion p, section#mantencion p, section#grua24-7 p, section#vulcanizacion p, section#asesoramiento p, section#compra-venta p, section#retiro-de-moto p, section#electricidad p {
+  color: #CCCCCC;
+}
+.section-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.2rem 0;
+  flex-wrap: wrap;
+}
+.btn-secondary {
+  padding: 0.7rem 1.3rem;
+  border: 1.5px solid #FFD700;
+  border-radius: 22px;
+  color: #FFD700;
+  font-weight: 600;
+  transition: background 0.2s;
+  background: none;
+  font-size: 1.02rem;
+}
+.btn-secondary:hover, .btn-back:hover {
+  background: rgba(255,215,0,0.15);
+}
+.calendar-placeholder {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #1E1E1E;
+  border-radius: 10px;
+  text-align: center;
+  color: #BBBBBB;
+}
+
+/* HEADER */
+header {
+  background: rgba(20, 20, 20, 0.86);
+  backdrop-filter: blur(10px);
+  padding: 0.85rem 1.1rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+.menu-toggle { font-size: 1.8rem; cursor: pointer; }
+nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 1rem; }
+nav li a { font-weight: 600; padding: 0.6rem; font-size: 1.05rem; border-radius: 7px;}
+nav li a:active, nav li a.selected { background: #232323; color: #FFD700; }
+
+/* FOOTER */
+footer {
+  padding: 1.1rem 0.7rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666666;
+  background: transparent;
+}
+.footer-logo img { margin: 0 auto 0.25rem auto; }
+
+/* SECCIONES SPA */
+.app-section {
+  display: none;
+  padding: 2rem 1.1rem;
+}
+.app-section.active {
+  display: block;
+  animation: fadeIn .3s;
+}
+.btn-back {
+  margin-top: 2.1rem;
+  padding: 0.65rem 1.6rem;
+  border-radius: 20px;
+  background: #FFD700;
+  color: #222;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1.08rem;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MEDIA QUERIES: Móviles */
+@media (max-width: 600px) {
+  header { flex-direction: column; gap: 0.6rem; padding-bottom: 0.2rem;}
+  nav { display: none; width: 100%; }
+  nav.show { display: block; }
+  nav ul { flex-direction: column; gap: 0.3rem; width: 100%; }
+  nav li a { width: 100%; display: block; text-align: center;}
+  .hero, .app-section { padding: 1.1rem 0.5rem; }
+  .logo img, .hero-logo, .footer-logo img { height: 55px; max-height: 20vw; }
+  .btn-secondary, .btn-back { font-size: 1rem; padding: 0.75rem 1.05rem; }
+  .calendar-placeholder { font-size: 0.97rem; }
+  section h2 { font-size: 1.17rem;}
+}
+
+@media (min-width: 601px) {
+  .menu-toggle { display: none; }
+  nav { display: block; }
+}
+
+/* Animación para las pantallas SPA */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-agenda {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4285F4; /* Azul Google */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-agenda:hover {
+  opacity: 0.9;
+  transform: translateY(-3px);
+}
+
+.curso-galeria {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.curso-img {
+  width: 100px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.social-footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
